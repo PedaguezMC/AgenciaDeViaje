@@ -22,34 +22,18 @@ Nombre varchar(50),
 Apellidos varchar(30),
 Direccion varchar(50));
 
-create tabla Hoteles (
+crear tabla Hoteles (
 CodigoHotel int clave principal,
 Nombre varchar(30), 
 Direccion varchar(50), 
 Ciudad varchar(20),
 Telefono varchar(10),
 NoPlazas int,
-Fllegada date,
-FPartida date,
-PensionMedia(20),
-PensionCompleta(20)
+Fllegada SmallDateTime,
+FPartida SmallDateTime,
+PensionMedia varchar(20),
+PensionCompleta varchar(20)
 );
-                  
-Create table Contrata (idContratato int primary key,
-codigoSucursal int,
-CodigoTurista int,
-constraint FK_CS foreign key (codigoSucursal) references Sucursal (codigoSucursal),
-constraint FK_CT foreign key (codigoTurista) references Turistas (CodigoTurista));
-
-Create table Elige (idElige int primary key,
-NoVuelo int,
-CodigoTurista int,
-constraint FK_NV foreign key (NoVuelo) references Vuelos (NoVuelo),
-constraint FK_CTE foreign key (CodigoTurista) references Turista (CodigoTurista));
-
-Create table Hospedar (idElige int primary key,
-CodigoTurista int,
-constraint FK_CTH foreign key (CodigoTurista) references Turista (CodigoTurista));
 
 insert into Sucursal (CodigoSucursal, Direccion, Telefono) values (1, 'Cody', '410-638-3012');
 insert into Sucursal (CodigoSucursal, Direccion, Telefono) values (2, 'Rutledge', '266-560-1165');
@@ -62,3 +46,9 @@ insert into Vuelos (NoVuelo, FechaVuelo, Origen, Destino, Plazas Totales, Plazas
 insert into Vuelos (NoVuelo, FechaVuelo, Origen, Destino, Plazas Totales, PlazasTurista) values (3, '2/23/2020', 'Lille', 'Hexi', 79, 53);
 insert into Vuelos (NoVuelo, FechaVuelo, Origen, Destino, Plazas Totales, PlazasTurista) values (4, '11/22/2020', 'Fulin', 'Sorodot', 76, 22);
 insert into Vuelos (NoVuelo, FechaVuelo, Origen, Destino, Plazas Totales, PlazasTurista) values (5, '7/18/2020', 'Tilburg', 'Pinhão', 63, 57);
+
+insert into Turistas (CodigoTurista, Nombre, ApMaterno, ApPaterno, Direccion, Telefono) values ('50845-0133', 'Haily', 'Couth', 'Paute', 'Twin Pines', '669-671-8810');
+insert into Turistas (CodigoTurista, Nombre, ApMaterno, ApPaterno, Direccion, Telefono) values ('64942-1038', 'Karin', 'Mityashin', 'Worpole', 'Warrior', '183-684-2364');
+insert into Turistas (CodigoTurista, Nombre, ApMaterno, ApPaterno, Direccion, Telefono) values ('50184-1041', 'Eward', 'Manzell', 'Diggons', 'Bobwhite', '724-408-1689');
+insert into Turistas (CodigoTurista, Nombre, ApMaterno, ApPaterno, Direccion, Telefono) values ('30142-070', 'Diandra', 'Bownes', 'Clell', 'Mariners Cove', '901-290-1092');
+insert into Turistas (CodigoTurista, Nombre, ApMaterno, ApPaterno, Direccion, Telefono) values ('55118-560', 'Denni', 'Ullett', 'Cater', 'Debs', '450-182-4782');
