@@ -30,7 +30,7 @@ Ciudad varchar(20),
 Telefono varchar(10),
 NoPlazas int,
 Fllegada date,
-FPartida,
+FPartida date,
 PensionMedia(20),
 PensionCompleta(20)
 );
