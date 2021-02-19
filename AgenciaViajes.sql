@@ -52,3 +52,10 @@ insert into Turistas (CodigoTurista, Nombre, ApMaterno, ApPaterno, Direccion, Te
 insert into Turistas (CodigoTurista, Nombre, ApMaterno, ApPaterno, Direccion, Telefono) values ('50184-1041', 'Eward', 'Manzell', 'Diggons', 'Bobwhite', '724-408-1689');
 insert into Turistas (CodigoTurista, Nombre, ApMaterno, ApPaterno, Direccion, Telefono) values ('30142-070', 'Diandra', 'Bownes', 'Clell', 'Mariners Cove', '901-290-1092');
 insert into Turistas (CodigoTurista, Nombre, ApMaterno, ApPaterno, Direccion, Telefono) values ('55118-560', 'Denni', 'Ullett', 'Cater', 'Debs', '450-182-4782');
+                  
+
+insert into Hoteles (CodigoHotel, Nombre, Direccion, Ciudad, Telefono , NoPlazas, Fllegada, FPartida, PensionMedia, PensionCompleta) values (64, 'Hodkiewicz Group', 'Melody', 'Maputi', '327-951-0214', 14, '8/6/2020', '10/7/2020', '$2.41', '$7.51');
+insert into Hoteles (CodigoHotel, Nombre, Direccion, Ciudad, Telefono , NoPlazas, Fllegada, FPartida, PensionMedia, PensionCompleta) values (58, 'Vandervort LLC', 'Washington', 'Saño', '167-971-8406', 58, '10/7/2020', '12/23/2020', '$2.15', '$4.99');
+insert into Hoteles (CodigoHotel, Nombre, Direccion, Ciudad, Telefono , NoPlazas, Fllegada, FPartida, PensionMedia, PensionCompleta) values (21, 'Bartell and Sons', 'Mariners Cove', 'Ermida', '813-622-4259', 46, '11/13/2020', '7/16/2020', '$6.53', '$8.07');
+insert into Hoteles (CodigoHotel, Nombre, Direccion, Ciudad, Telefono , NoPlazas, Fllegada, FPartida, PensionMedia, PensionCompleta) values (47, 'Thompson, Metz and Bahringer', 'Cordelia', 'Karanganyar', '614-479-6863', 22, '7/22/2020', '10/18/2020', '$5.23', '$6.21');
+insert into Hoteles (CodigoHotel, Nombre, Direccion, Ciudad, Telefono , NoPlazas, Fllegada, FPartida, PensionMedia, PensionCompleta) values (42, 'Ferry, Schoen and Wiza', 'Sunfield', 'Gemo', '777-746-8558', 51, '8/22/2020', '4/10/2020', '$2.99', '$1.27');
