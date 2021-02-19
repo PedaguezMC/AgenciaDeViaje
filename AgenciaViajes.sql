@@ -1,7 +1,7 @@
 create database AgenciaViajes;
 use AgenciaViajes;
 
-create table Sucrusal (
+create table Sucursal (
 CodigoSucursal int primary key,
 Direccion varchar(60),
 Telefono varchar(60)
