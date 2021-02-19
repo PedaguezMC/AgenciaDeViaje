@@ -22,7 +22,7 @@ Nombre varchar(50),
 Apellidos varchar(30),
 Direccion varchar(50));
 
-crear tabla Hoteles (
+create tabla Hoteles (
 CodigoHotel int clave principal,
 Nombre varchar(30), 
 Direccion varchar(50), 
@@ -34,6 +34,22 @@ FPartida date,
 PensionMedia(20),
 PensionCompleta(20)
 );
+                  
+Create table Contrata (idContratato int primary key,
+codigoSucursal int,
+CodigoTurista int,
+constraint FK_CS foreign key (codigoSucursal) references Sucursal (codigoSucursal),
+constraint FK_CT foreign key (codigoTurista) references Turistas (CodigoTurista));
+
+Create table Elige (idElige int primary key,
+NoVuelo int,
+CodigoTurista int,
+constraint FK_NV foreign key (NoVuelo) references Vuelos (NoVuelo),
+constraint FK_CTE foreign key (CodigoTurista) references Turista (CodigoTurista));
+
+Create table Hospedar (idElige int primary key,
+CodigoTurista int,
+constraint FK_CTH foreign key (CodigoTurista) references Turista (CodigoTurista));
 
 insert into Sucursal (CodigoSucursal, Direccion, Telefono) values (1, 'Cody', '410-638-3012');
 insert into Sucursal (CodigoSucursal, Direccion, Telefono) values (2, 'Rutledge', '266-560-1165');
