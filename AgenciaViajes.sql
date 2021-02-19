@@ -21,3 +21,16 @@ tel varchar(10),
 Nombre varchar(50),
 Apellidos varchar(30),
 Direccion varchar(50));
+
+crear tabla Hoteles (
+CodigoHotel int clave principal,
+Nombre varchar(30), 
+Direccion varchar(50), 
+Ciudad varchar(20),
+Telefono varchar(10),
+NoPlazas int,
+Fllegada date,
+FPartida,
+PensionMedia(20),
+PensionCompleta(20)
+);
